@@ -41,7 +41,7 @@ export const transformDate = ({ date, lang, type }) => {
 			return lang === 'en'
 				? `${month ? `${monthArray[lang][month - 1]}` : ''}${
 						day ? ` ${completeWith0(day)}` : ''
-				  }${day || month ? ', ' : ''}${year}`
+				  }${day ? ', ' : ''}${year}`
 				: lang === 'es'
 				? `${day ? `${day} de ` : ''}${
 						month ? `${monthArray[lang][month - 1]}, ` : ''

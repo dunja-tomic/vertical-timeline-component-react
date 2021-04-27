@@ -97,7 +97,7 @@ describe('Helpers', () => {
 					const date = '2020/08';
 
 					const result = transformDate({ date, lang, type });
-					expect(result).toEqual('Aug, 2020');
+					expect(result).toEqual('Aug 2020');
 				});
 
 				it('should transform date with a format like YYYY', () => {
